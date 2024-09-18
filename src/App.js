@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+// import ParentComp from './Props/ParentComp';
+// import { CounterParent } from './Task2_Props_state_counter/CounterParent';
+import Decrement from './Task2_Props_state_counter/Decrement';
+import Increment from './Task2_Props_state_counter/Increment';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <ParentComp/> */}
+    {/* <CounterParent/> */}
+    <Increment/>
+    <Decrement/>
     </div>
   );
 }
