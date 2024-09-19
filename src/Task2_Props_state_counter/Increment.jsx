@@ -9,7 +9,7 @@ const Increment = () => {
     }
     return (
         <div>
-            {/* <h1 className='text-center text-xxl font-bold '>Count: {count}</h1> */}
+            
             <Count count={count} />
         <CounterParent className="bg-orange-400 text-white" btnName="Increment" handleFunc={handleIncrement} />
         </div>

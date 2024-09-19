@@ -1,0 +1,151 @@
+
+09-09-2024 react
+why react is chosen as frontend (key feturres)
+ delcarative / imperative
+ =>imperative -- step by step approach --- js does
+1) =>declarative -- already coded  and only the cmd is passed i.e the steps run  at background -- react does predefined functions 
+2) performance wise react best as it uses virutal dom whereas angular uses shallowd om,realdom
+3)oneway data binding a->b no b->a angular is 2 way data binding a->b  b->a happens
+4)no separate file needed like agular html,css,ts
+5)error handling 
+6)beginner friendly whereas angular intermediate friendly
+7)a) key features: reusable components elments can be reused (through import ,export modules)
+b) we can use css,js,html at same pg through jsx file 
+
+
+10-09-2024 react
+components - file is an componenets
+type of componenets
+- function based componoents if a function returns elements, strings, function then it's function based componenets
+-classs based componenets if a class returns elements class based componenets
+
+
+
+11-09-24 react
+ export defulat accepts for normal function but not for arrow function
+ class based componenets
+ need to render
+ need to extends from the react components
+ and return 
+ function based component returns ellemnts whereas 
+ func ion returns only value
+ 
+ 
+ 
+ 12-09-24
+  state - data management, data handling
+  js code execution 
+  
+  
+  13-09-24
+  state 
+  -state is temporary storage for the particular component
+  -it can be  achieved by props when it should used in another component
+  -rerendering occcurs only in the particular compnent where state is used
+  -boolean ,strings , numbers are compared by value but object , array are compared by refernce 
+
+
+-use keyword used means that comes under hooks concept
+-class based compponent is a stateful componenets as it has inbuilt state methods we can call by .state method and by using extends react component
+-function based compnent is a stateless components as it only imports the state componenets
+
+
+-hooks are functions or methods
+
+14-09-24
+ from api fetch any two data and and show in web browser using usestate , map 
+
+
+16-09-24
+what is state?
+state is one of the hooks can be achived in function through usestate
+hooks should be called at top it shoukd not be called innbtw
+ virtual dom 
+ normal actual dom --> has old one --> old virtual dom --> without changes 
+							--> new virtual dom  --> with changes
+							--> comparision of old and virtual dom occurs 
+							--> updates in new actual dom 
+							--> it focus on the componnet present 
+							
+							
+							
+17-09-24
+props
+one way data binding parent -->child
+
+18-09-24
+state
+- temporay storage
+-value ,function returns 
+- hooks used - usestate 
+-usestate is a function
+
+task -- react 
+counter -- increment , decrement using props state
+							
+							
+							
+express 19-09-24							
+jwt 
+ header = algorithm,type of the algorithm 
+paylaod = data
+signature  = secret key 
+
+
+
+19-09-24
+life cycle of components
+ what's components -- it's an elements
+initiailzation
+-- setup props and states 
+the state which we write when we shift to one component to 
+another the state , props  gets initalize by itself
+ initalily there were methods to initalize the state and props now as it was not in use all those methods was deprecated
+mounting 
+--When an element is added  that phase is said to bge mounting phase
+
+-- methods
+1)componentWillmount - when the elements 
+created, before elemnts are created this function gets trigeered 
+ when we use many components to create and created when u need to do a particular task before this component is created during those 
+ times this function willmount can be used given by react
+
+--we don't need to go and trigeer this function as it get sstrigeerred by itself whenever we create a component before i.e during a navigation from one component to other generally the old components 
+gets deleted and new gets inserted so beofre insertion it happens
+
+
+2)render - this is after this will mount function , in ui it been displayted the elements so that time render happens 
+ before render willmount after render didmount
+
+3)componnetDidmount -
+
+
+updation 
+-- same like mounting phase 
+the differnce is whenever the update or change is happened during those times this functyion gets trigeered
+whereas i mounting phase only one time is trigeered
+
+
+states
+1)shouldcomponentUpdate - this is used as hook in functioned based componnet --usedmemo
+this is not much important used for performance...buildup 
+2)componentwillupdate - samelike willmount
+3)render
+4)componentdidupdate - same like didmount
+
+unmounting 
+--When an element is  deleted  that phase is said to bge unmounting phase
+1)componentwillunmount -sameelike willmount
+							
+							
+							
+								
+						
+common used methods 
+- didupdate
+-didmount  =>AUTOMATICALLY TRIGEERS 
+
+-willunmount
+
+-didcatch --error handling 
+  
