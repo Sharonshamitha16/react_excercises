@@ -142,9 +142,8 @@ unmounting
 								
 						
 common used methods 
-- didupdate
--didmount  =>AUTOMATICALLY TRIGEERS 
-
+- didupdate => state or props changes or updates happen 
+-didmount  =>AUTOMATICALLY TRIGEERS   used for data fetching 
 -willunmount
 
 -didcatch --error handling 

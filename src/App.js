@@ -1,20 +1,19 @@
 
 import './App.css';
 import { CounterApp } from './Counterapp_props_state/CounterApp';
-
-// import Decrement from './Task2_Props_state_counter/Decrement';
-// import Increment from './Task2_Props_state_counter/Increment';
-
+import UseEffectSample from './20-09-24/UseEffectSample';
+import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-   
-    {/* <Increment/>
-    <Decrement/> */}
-    <CounterApp/>
+
+      <Routes>
+        <Route path="/" element={<UseEffectSample />} />
+        <Route path="/CounterApp" element={<CounterApp />} />
+      </Routes>
 
     </div>
-  );
+  ); 
 }
 
 export default App;
