@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+
 
 const UseEffectSample = () => {
     const [state, setState] = useState()
@@ -28,7 +28,7 @@ const UseEffectSample = () => {
         <div className='w-full h-screen flex  gap-3  justify-center items-center'>
             <p >UseEffect: </p>
             <button onClick={() => setState([])} className='bg-blue-100 mx-2 p-2 rounded'>TRIGGER</button>
-            <Link to={'/CounterApp'} className='bg-blue-100 mx-2 p-2 rounded'>Navigate</Link>
+            {/* <Link to={'/CounterApp'} className='bg-blue-100 mx-2 p-2 rounded'>Navigate</Link> */}
         </div>
     )
 

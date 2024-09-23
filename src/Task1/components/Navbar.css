@@ -1,0 +1,19 @@
+.underline-expand {
+    position: relative;
+  }
+
+  .underline-expand::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #dbdd6b;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+  }
+
+  .underline-expand:hover::after {
+    width: 100%;
+    left: 0;
+  }
