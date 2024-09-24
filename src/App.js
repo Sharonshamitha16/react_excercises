@@ -18,7 +18,7 @@ function App() {
            
            
            
-           <Link  to={"/Navbar"}><Navbar/></Link>
+           {/* <Link  to={"/Navbar"}><Navbar/></Link> */}
 
     </div>
   );
