@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Count = ({ count }) => {
   return (
@@ -11,6 +12,9 @@ const ButtonComp = ({ btnName, handleFunction, count }) => {
 
 export const CounterApp = () => {
   const [count, setCount] = useState(0)
+  
+  const location = useLocation();
+  
   const handleIncrement = () => {
     setCount((count) => count + 1)
   }
@@ -23,6 +27,7 @@ export const CounterApp = () => {
   return (
     <div className='w-full h-screen flex flex-col   justify-center items-center'>
       <Count count={count} />
+     <p>{location.state}</p>
       <div className='flex gap-3 '>
         <ButtonComp btnName="Increment" handleFunction={handleIncrement} />
         <ButtonComp btnName="Decrement" handleFunction={handleDecrement} />

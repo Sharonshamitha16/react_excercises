@@ -15,9 +15,8 @@ export const RouterClassEx = () => {
     <Routes>
         <Route path='/nav' element={<Home/>}>
         <Route index element={<Home/>}/>
-        <Route path="/UseEffectSample" element={<UseEffectSample />} />
-        <Route path="/CounterApp" element={<CounterApp />} />
-        <Route path="*" element={<h1>Page Not Found</h1>} />
+        <Route path="/nav/UseEffectSample" element={<UseEffectSample />} />
+        <Route path="/nav/CounterApp" element={<CounterApp />} />
         </Route>
         {/* <Route path="/" element={ <App />} /> */}
         {/* <Route path="/UseEffectSample" element={<UseEffectSample />} />
