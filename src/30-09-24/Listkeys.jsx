@@ -1,6 +1,19 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { ContextFunction } from '../04-10-24/ConextComp'
+const MappedData =({props})=>{
+    const {_id,name,email,age}= props
+   return (
+        <div key={_id}>
+            <h1>Name: {name}</h1>
+            <h1>Age: {age}</h1>
+            <h1>Email: {email}</h1>
+        </div>
+    )
+}
 const ListAndKeys = () => {
+const {state} = useContext(ContextFunction) || {}
+// handle the undefined value ie we can't destructure undefined like a object 
+console.log(state);
 
     const data = [
         {
@@ -38,13 +51,7 @@ const ListAndKeys = () => {
     return (
         <div className='h-screen p-20 m-10'>
             {data?.length >= 1 ? (
-                data.map(({ _id, name, age, email }, index) => (
-                    <div key={_id}>
-                        <h1>Name: {name}</h1>
-                        <h1>Age: {age}</h1>
-                        <h1>Email: {email}</h1>
-                    </div>
-                ))
+                data.map((value, index) => <MappedData key={value._id} props={value}/>)
             ) : (
                 <h1>not found</h1>
             )}

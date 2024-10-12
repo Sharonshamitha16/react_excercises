@@ -1,42 +1,19 @@
-// import React, { createContext, useState } from 'react'
-//  export  const ContextFunction = createContext()
-// const ConextComp = ({children}) => {
-//   const [state,setState] = useState("Parent")
-//     return (
-//    <ContextFunction.Provider value={{state,setState}}>
-//     {children}
-//    </ContextFunction.Provider>
-//    // why this is given as end closing tags as it provides/returns u componnet if not it gives u in object
-
-//   )
-// }
-// export default ConextComp;
-// export const A =()=>{
-//     return <h1>A component</h1>
-// }
-// export const  B=()=>{
-//     return <h1>A component</h1>
-// }
-// export const A =()=>{
-//     return <h1>A component</h1>
-// }
-// export const A =()=>{
-//     return <h1>A component</h1>
-// }
-// export const A =()=>{
-//     return <h1>A component</h1>
-// }
-
-// export default ConextComp
 
 
 
-import React, { createContext, useContext, useState } from "react";
+
+
+
+import React, { Children, createContext, useContext, useState } from "react";
 
 export const ContextFunction = createContext();
 
 const ContextComp = ({ children }) => {
+
+  const data = "test"
+  const b_data ="b data"
   const [state, setState] = useState("Parent");
+console.log(Children, "children");
 
   return (
     <ContextFunction.Provider value={{ state, setState }}>
