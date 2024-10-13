@@ -14,7 +14,7 @@ const MappedData = ({ value, setData }) => {
                 setData((prevState) => prevState.filter(value => value._id !== id)) 
             })
                     .catch((err) => toast.error(err.response?.data?.message))
-
+   
            
         }
         return (
